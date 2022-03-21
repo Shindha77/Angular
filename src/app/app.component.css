@@ -1,0 +1,17 @@
+.up {
+  display: flex;
+  justify-content: space-between;
+}
+
+.down-left {
+  position: absolute;
+  bottom: 5px;
+}
+
+.down-right {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+
