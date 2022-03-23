@@ -6,28 +6,25 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BlockComponent } from './block/block.component';
-import { UserProfileComponent } from './user-profile/user-profile.component';
-import { ContactComponent } from './contact/contact.component';
 import { ROUTES } from './app.routes';
-import { MenuComponent } from './menu/menu.component';
-import { SignupComponent } from './signup/signup.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CreateDonkeyComponent } from './create-donkey/create-donkey.component';
+import { ListDonkeyComponent } from './list-donkey/list-donkey.component';
+import { UserDonkeyComponent } from './user-donkey/user-donkey.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BlockComponent,
-    BlockComponent,
-    UserProfileComponent,
-    ContactComponent,
-    MenuComponent,
-    SignupComponent,
+    CreateDonkeyComponent,
+    ListDonkeyComponent,
+    UserDonkeyComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule.forRoot(ROUTES),
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

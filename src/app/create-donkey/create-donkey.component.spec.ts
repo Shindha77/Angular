@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BlockComponent } from './block.component';
+import { CreateDonkeyComponent } from './create-donkey.component';
 
-describe('BlockComponent', () => {
-  let component: BlockComponent;
-  let fixture: ComponentFixture<BlockComponent>;
+describe('CreateDonkeyComponent', () => {
+  let component: CreateDonkeyComponent;
+  let fixture: ComponentFixture<CreateDonkeyComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BlockComponent ]
+      declarations: [ CreateDonkeyComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BlockComponent);
+    fixture = TestBed.createComponent(CreateDonkeyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

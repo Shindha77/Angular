@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ContactComponent } from './contact.component';
+import { UserDonkeyComponent } from './user-donkey.component';
 
-describe('ContactComponent', () => {
-  let component: ContactComponent;
-  let fixture: ComponentFixture<ContactComponent>;
+describe('UserDonkeyComponent', () => {
+  let component: UserDonkeyComponent;
+  let fixture: ComponentFixture<UserDonkeyComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ContactComponent ]
+      declarations: [ UserDonkeyComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ContactComponent);
+    fixture = TestBed.createComponent(UserDonkeyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

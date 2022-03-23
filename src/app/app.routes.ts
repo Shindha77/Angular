@@ -1,12 +1,11 @@
 import { Routes } from '@angular/router';
-import { SignupComponent } from './signup/signup.component';
-import { UserProfileComponent } from './user-profile/user-profile.component';
+import { CreateDonkeyComponent } from './create-donkey/create-donkey.component';
+import { ListDonkeyComponent } from './list-donkey/list-donkey.component';
 
 
 const ROUTES: Routes = [
-  { path: 'user', component: UserProfileComponent},
-  { path: 'signup', component: SignupComponent},
-  { path: '', component: UserProfileComponent},
+  { path: '', component: ListDonkeyComponent},
+  { path: 'create-donkey', component: CreateDonkeyComponent },
 ];
 
 export { ROUTES };
