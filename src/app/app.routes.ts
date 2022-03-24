@@ -4,7 +4,6 @@ import { ListDonkeyComponent } from './list-donkey/list-donkey.component';
 
 
 const ROUTES: Routes = [
-  { path: '', component: ListDonkeyComponent},
   { path: 'create-donkey', component: CreateDonkeyComponent },
 ];
 

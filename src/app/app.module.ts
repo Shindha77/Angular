@@ -11,6 +11,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CreateDonkeyComponent } from './create-donkey/create-donkey.component';
 import { ListDonkeyComponent } from './list-donkey/list-donkey.component';
 import { UserDonkeyComponent } from './user-donkey/user-donkey.component';
+import { MyFormComponent } from './my-form/my-form.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { UserDonkeyComponent } from './user-donkey/user-donkey.component';
     CreateDonkeyComponent,
     ListDonkeyComponent,
     UserDonkeyComponent,
+    MyFormComponent,
   ],
   imports: [
     BrowserModule,
