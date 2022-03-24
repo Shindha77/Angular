@@ -1,0 +1,53 @@
+<div class="card">
+  <div class="card-header text-white bg-secondary">
+    Mon Formulaire
+  </div>
+  <div class="card-body">
+    <form (ngSubmit)="onSubmit(myForm)" #myForm="ngForm">
+      <div class="row">
+        <div class="col mb-3">
+          <label>Firstname</label>
+          <input type="text" class="form-control" [(ngModel)]="user.firstname" name="firstname" #firstname="ngModel"
+            required minlength="3" maxlength="15" [ngClass]="{'is-invalid': myForm.submitted && !firstname.valid}">
+          <div class="invalid-feedback">
+            <span *ngIf="firstname.errors?.['required']">Le prénom est requis</span>
+            <span *ngIf="firstname.errors?.['minlength']">La longueur minimale doit être supérieure à 3</span>
+            <span *ngIf="firstname.errors?.['maxlength']">La longueur maximale doit être inférieure à 15</span>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <label>Lastname</label>
+          <input type="text" class="form-control" [(ngModel)]="user.lastname" name="lastname" #lastname="ngModel"
+            required minlength="3" maxlength="15" [ngClass]="{'is-invalid': myForm.submitted && !lastname.valid}">
+          <div class="invalid-feedback">
+            <span *ngIf="lastname.errors?.['required']">Le nom est requis</span>
+            <span *ngIf="lastname.errors?.['minlength']">La longueur minimale doit être supérieure à 3</span>
+            <span *ngIf="lastname.errors?.['maxlength']">La longueur maximale doit être inférieure à 15</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col mb-3">
+          <label>Email</label>
+          <input type="email" class="form-control" [(ngModel)]="user.email" name="email" #email="ngModel" required email [ngClass]="{'is-invalid': myForm.submitted && !email.valid}">
+          <div class="invalid-feedback">
+            <span *ngIf="email.errors?.['required']">L'email est requis</span>
+            <span *ngIf="email.errors?.['email']">L'email est invalide</span>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <label>Password</label>
+          <input type="password" class="form-control" [(ngModel)]="user.password" name="password" #password="ngModel" required minlength="5" maxlength="20" [ngClass]="{'is-invalid': myForm.submitted && !password.valid}">
+          <div class="invalid-feedback">
+            <span *ngIf="password.errors?.['required']">Le mot de passe est requis</span>
+            <span *ngIf="password.errors?.['minlength']">La longueur minimale doit être supérieure à 5</span>
+            <span *ngIf="password.errors?.['maxlength']">La longueur maximale doit être inférieure à 2O</span>
+          </div>
+        </div>
+      </div>
+      <div class="text-end">
+        <button type="submit" class="btn btn-secondary">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
